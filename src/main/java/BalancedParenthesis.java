@@ -8,9 +8,8 @@ public class BalancedParenthesis {
         put('[', ']');
         put('(', ')');
     }};
-    HashMap.of
     static Boolean isBalanced(String input) {
-        Stack<Character> s = new Stack<>();
+        var s = new Stack<Character>();
         for (char c: input.toCharArray()) {
             if (c == '{' || c == '[' || c == '(') {
                 s.push(c);

@@ -22,7 +22,7 @@ public class Athlete {
         System.out.println(Arrays.toString(numbers));
         int[] sNumbers = IntStream.range(0, 3).toArray();
         int[] a = IntStream.iterate(10, x -> x <= 100, x -> x + 10).toArray();
-        StringBuilder sb = new StringBuilder("Abc");
-        StringBuffer sbb = new StringBuffer("Abc");
+        var sb = new StringBuilder("Abc");
+        var sbb = new StringBuffer("Abc");
     }
 }
