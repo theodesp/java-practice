@@ -6,9 +6,9 @@ public class Fibonacci {
     static int fibonacci(Integer n) {
         int a = 0, b = 1;
         while (n >= 1) {
-            int t = b;
+            int temp = b;
             b = a + b;
-            a = t;
+            a = temp;
             n -= 1;
         }
         return a;
