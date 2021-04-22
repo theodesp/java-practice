@@ -4,6 +4,8 @@ Fibonacci.java
  Fibonacci
 CeasarCipher.java
  CeasarCipher
+IntToString.java
+ IntToString
 PrimeNumber.java
  PrimeNumber
 SumMulThreeAndFive.java
@@ -39,9 +41,8 @@ NthOddElement.java
  NthOddElement
 PackageRice.java
  PackageRice
-BinaryTreeLevel.java
- BinaryTreeLevel
- BinaryTreeLevel$TreeNode
+RunLengthEncoding.java
+ RunLengthEncoding
 Factorial.java
  Factorial
 CheckedExceptions.java
@@ -60,23 +61,28 @@ IsPalindrome.java
  IsPalindrome
 Hospital.java
  Hospital
+StringNoRepeatingChars.java
+ StringNoRepeatingChars
 CountNodes.java
  CountNodes
  CountNodes$ListNode
 DoubleCheckedLocking.java
  DoubleCheckedLocking
  DoubleCheckedLocking$Resource
+BinaryTreeLevel.java
+ BinaryTreeLevel
+ BinaryTreeLevel$TreeNode
 LinearSearch.java
  LinearSearch
+SpiralForm.java
+ SpiralForm
 Athlete.java
  Athlete
 CommaSeperated.java
  CommaSeperated
 TwoSum.java
  TwoSum
-IntToString.java
- IntToString
-RunLengthEncoding.java
- RunLengthEncoding
-SpiralForm.java
- SpiralForm
+StringPerms.java
+ StringPerms
+ZigZagPattern.java
+ ZigZagPattern
