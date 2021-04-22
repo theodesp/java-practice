@@ -74,7 +74,9 @@ CommaSeperated.java
  CommaSeperated
 TwoSum.java
  TwoSum
-RunLengthEncoding.java
- RunLengthEncoding
 IntToString.java
  IntToString
+RunLengthEncoding.java
+ RunLengthEncoding
+SpiralForm.java
+ SpiralForm
