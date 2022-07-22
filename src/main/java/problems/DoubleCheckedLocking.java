@@ -5,6 +5,9 @@ public class DoubleCheckedLocking {
             this.data = data;
         }
     }
+    /**
+     * https://en.wikipedia.org/wiki/Double-checked_locking
+     */
     private volatile Resource resource = null;
     public Resource getResource() {
         if (resource == null) {

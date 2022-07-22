@@ -11,6 +11,7 @@ public class MergeTwoSortedLists {
         if (b == null)
             return a;
         while (a != null && b != null) {
+            // If first is larger than second then move second to result. Otherwise move first to result
             if (a.value > b.value) {
                 dummy.value = b.value;
                 dummy.next = new ListNode();
@@ -21,9 +22,11 @@ public class MergeTwoSortedLists {
                 a = a.next;
             }
         }
+        // Move rest of the first list to result
         if (a != null) {
             dummy.next = a;
         }
+        // Move rest of the second list to result
         if (b != null) {
             dummy.next = b;
         }

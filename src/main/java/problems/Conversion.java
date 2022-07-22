@@ -1,3 +1,6 @@
+/*
+ * Convert Celcius to Farrenheit and vice versa.
+ */
 public class Conversion {
     public double tempConversion(double temp, String unit) {
         if (unit.equals("F")) {

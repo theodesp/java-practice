@@ -2,6 +2,10 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Stack;
 
+/*
+ * Given an expression string exp, write a program to examine whether the pairs 
+ * and the orders of “{“, “}”, “(“, “)”, “[“, “]” are correct in exp.
+ */
 public class BalancedParenthesis {
     static Map<Character, Character> map = new HashMap<>() {{
         put('{', '}');
@@ -34,8 +38,8 @@ public class BalancedParenthesis {
 
         // Function call
         if (isBalanced(expr))
-            System.out.println("Balanced ");
+            System.out.println("Balanced");
         else
-            System.out.println("Not Balanced ");
+            System.out.println("Not Balanced");
     }
 }

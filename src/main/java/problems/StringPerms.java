@@ -1,11 +1,16 @@
-
+/*
+ * Print all the permutations of a string
+ */
 public class StringPerms {
     static void permute(String str, int l, int r)
-    {
+    {   
+        // If both pointers reached we print the final string
         if (l == r)
             System.out.println(str);
         else
         {
+            // Othewise we try to perform backtracking by swapping the current char at l 
+            // with the char at r, call permute with l+1 and restore the swap.
             for (int i = l; i <= r; i++)
             {
                 str = swap(str,l,i);

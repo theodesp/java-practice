@@ -14,11 +14,12 @@ public class SecondLargestElement {
         int secondMax = Integer.MIN_VALUE;
 
         for (int j : arr) {
-            if (j > max) {// found a new max. Update max and second max
+            // We found a new max. Update max and second max here.
+            if (j > max) {
                 secondMax = max;
                 max = j;
             }
-
+            // We found a new second max here. Update second max only.
             if (j < max && j > secondMax) {
                 secondMax = j;
             }

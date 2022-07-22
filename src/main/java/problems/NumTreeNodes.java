@@ -3,7 +3,9 @@ public class NumTreeNodes {
         public TreeNode left;
         public TreeNode right;
     }
-    // Write a method that returns the number of nodes in a binary tree.
+    /*
+     * Write a method that returns the number of nodes in a binary tree.
+     */
     int getNumberOfNodes(TreeNode node) {
        if (node == null) {
            return 0;

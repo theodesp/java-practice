@@ -3,11 +3,11 @@ import java.util.PriorityQueue;
 
 public class MergeKSortedArrays {
     /*
-    Create a min Heap and insert the first element of all k arrays.
-Run a loop until the size of MinHeap is greater than zero.
-Remove the top element of the MinHeap and print the element.
-Now insert the next element from the same array in which the removed element belonged.
-If the array doesn’t have any more elements, then replace root with infinite.After replacing the root, heapify the tree.
+    * Create a min Heap and insert the first element of all k arrays.
+    * Run a loop until the size of MinHeap is greater than zero.
+    * Remove the top element of the MinHeap and print the element.
+    * Now insert the next element from the same array in which the removed element belonged.
+    * If the array doesn’t have any more elements, then replace root with infinite.After replacing the root, heapify the tree.
      */
     public static int[] mergeKArrays(int[][] arr, int a, int k)
     {

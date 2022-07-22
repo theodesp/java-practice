@@ -4,7 +4,9 @@ public class CountLeafNodes {
         public TreeNode right;
     }
 
-    // Count the number of leaf nodes in a binary tree
+    /*
+     * Count the number of leaf nodes in a binary tree
+     */
     static int countLeafNodes(TreeNode node) {
         if (node == null) {
             return 0;
