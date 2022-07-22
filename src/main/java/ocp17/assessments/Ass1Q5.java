@@ -1,3 +1,4 @@
+package ocp17.assessments;
 public class Ass1Q5 {
     public static void addToInt(int x, int amountToAdd) {
         x = x + amountToAdd; 

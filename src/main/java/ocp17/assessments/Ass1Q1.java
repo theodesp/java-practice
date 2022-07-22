@@ -1,3 +1,4 @@
+package ocp17.assessments;
 public class Ass1Q1 {
     public static void main(String[] args) {
         final int score1 = 8, score2 = 3;

@@ -1,3 +1,4 @@
+package ocp17.assessments;
 public class Ass1Q2 {
     public static void main(String[] args) {
         int moon = 9, star = 2 + 2 * 3; // moon = 9, star = 8
