@@ -17,5 +17,10 @@ public class TextBlock {
             deer
             """; // 4 lines
         System.out.print(block3);
+
+        String block4 = """
+            "doe\"\"\"
+            \"deer\"""
+            """;
     }
 }

@@ -20,5 +20,6 @@ public class Reserved {
         int i1, i2, i3 = 0; // only i3 is initialized
         int num, String value; // DOES NOT COMPILE multiple variables of different types in the same statement
         double d1, double d2; // does not compile for the same reason
+        int i3; i4; // illegal as i4 has no declared type
     }
 }
