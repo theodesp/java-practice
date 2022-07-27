@@ -14,3 +14,4 @@ public class NumberPicker {
         System.out.println(r.nextInt(10));
         Deque<Integer> d = new Deque<>(); // from star import
     }
+}
