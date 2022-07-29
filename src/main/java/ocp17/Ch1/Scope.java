@@ -11,6 +11,7 @@ public class Scope {
 
         // two points to "b"
         System.out.println(two);
+        
         // three points to "b"
         System.out.println(three);
     }

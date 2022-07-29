@@ -22,7 +22,7 @@ public class Eat {
             {
                 var teenyBit = true;
                 System.out.println(bitesOfCheese);
-            }
+            } // teenyBit goes out of scope here
         }
         System.out.println(teenyBit); // DOES NOT COMPILE teenyBit out of scope
     }
@@ -36,7 +36,7 @@ public class Eat {
                 roomInBelly = roomInBelly - amountEaten; 
                 amountOfFood = amountOfFood - amountEaten;
             } 
-        }
+        } // timeToEat goes out of scope here
         System.out.println(amountOfFood);
         System.out.println(timeToEat); // DOES NOT COMPILE timeToEat is out of scope
     }

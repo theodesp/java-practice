@@ -6,7 +6,7 @@ public class Reference {
         int len = reference.length();
         int bad = len.length(); // Does not compile. Int does not have length() method. Primitives do not have methods
 
-        int value = null; // Does not compile. You cannot assign null to primitives
+        int value = null; // Does not compile. You cannot assign null to primitives only objects
         String name = null;
     }
 }

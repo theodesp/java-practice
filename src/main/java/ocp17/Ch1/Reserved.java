@@ -2,10 +2,10 @@ package ocp17.Ch1;
 
 public class Reserved {
     public static void main(String[] args) {
-        long okidentifier;
-        float $OK2Identifier;
-        boolean _alsoOK1d3ntifi3r; 
-        char __SStillOkbutKnotsonice$;
+        long okidentifier; // OK
+        float $OK2Identifier; // OK
+        boolean _alsoOK1d3ntifi3r; // OK
+        char __SStillOkbutKnotsonice$; // OK
 
         int 3DPointClass; // identifiers cannot begin with a number
         byte hollywood@vine;  // @ is not a letter, digit, $ or _

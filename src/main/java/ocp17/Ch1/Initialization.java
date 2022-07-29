@@ -3,11 +3,11 @@ package ocp17.Ch1;
 public class Initialization {
     public static void main(String[] args) {
         final int y = 10;
-        y += 10; // does not compile
+        y += 10; // does not compile. It is final and cannot be re-assigned
 
         final int[] favoriteNumbers = new int[10];
         favoriteNumbers[0] = 10;
-        favoriteNumbers = null; // DOES NOT COMPILE. It is final and cannot be assigned
+        favoriteNumbers = null; // DOES NOT COMPILE. It is final and cannot be re-assigned
     }
 
     public int notValid() { 

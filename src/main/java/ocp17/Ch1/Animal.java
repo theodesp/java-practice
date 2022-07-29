@@ -14,3 +14,4 @@ public class Animal { // At most one of the top- level types in the file is allo
 }
 
 class Animal2 {} // Allowed as long as it is not public
+public class Animal3 // Not allowed. Only one public class per file

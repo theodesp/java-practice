@@ -8,10 +8,10 @@ public class TextBlock {
             * * 
            * * *"""; 
         // System.out.print(pyramid);
-        //String block = """doe"""; // Does not compile. Text blocks require a line break after the opening """, making this one invalid
+        String block = """doe"""; // Does not compile. Text blocks require a line break after the opening """, making this one invalid
         String block2 = """
             doe \
-            deer"""; // \ means omit new line on that line so the output is one line
+            deer"""; // \ means omit new line on that line so the output is one line doe deer
         String block3 = """
             doe \n
             deer

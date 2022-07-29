@@ -1,6 +1,7 @@
 package ocp17.Ch1;
 
 public class Bird {
+    { System.out.println("A"); } // called first
     public static void main(String[] args) {
         { System.out.println("Feathers"); }
         new Bird(); // prints Snowy
@@ -8,7 +9,9 @@ public class Bird {
         Chick chick = new Chick(); 
         System.out.println(chick.name);
     }
-    { System.out.println("Snowy"); }
+    { System.out.println("Snowy"); } // called second
+    {} // empty blocks
+    { System.out.println("Mountain"); } // called last
 
 }
 

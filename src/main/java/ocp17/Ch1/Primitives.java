@@ -8,6 +8,7 @@ public class Primitives {
         int i = 100; // -2147483648:2147483647
         long lo = 100l; // -2^63:2^63 – 1
         float f = 12.0f;
+        float f = 12.0; // Does not compile as double does not fit within float
         double d = 12.0;
         char c = 'a'; // 0:65535
         int out = 3123456789 // Does not compile as 3123456789 is out of range for int
