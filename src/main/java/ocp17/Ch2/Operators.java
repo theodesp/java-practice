@@ -43,6 +43,9 @@ public class Operators {
         System.out.println(parkAttendance--); // 1 
         System.out.println(parkAttendance); // 0
 
+        int i = 0;
+        --i++; // DOES NOT COMPILE. You cannot use both pre and post inc operators
+
         int price = 2 * 5 + 3 * 4 - 8; // evaluates from left to right
         long pigeon = 1 + ((3 * 5) / 3; // DOES NOT COMPILE missing right parenthesis
         int blueJay = (9 + 2) + 3) / (2 * 4; // DOES NOT COMPILE missing left and right parenthesis

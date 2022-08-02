@@ -7,7 +7,7 @@ public class Promotion {
         var z = x * y; // z is long
 
         double xx = 39.21; 
-        float yy = 2.1; // does not compile
+        float yy = 2.1; // does not compile. Double cannot fit into float
         var zz = x + yy;
 
         short xxx = 10; 

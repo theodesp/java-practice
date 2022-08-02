@@ -10,5 +10,6 @@ public class Assignment {
         boolean healthy = false; 
         if(healthy = true)
             System.out.print("Good!"); // prints Good!
+        
     }
 }
