@@ -26,7 +26,6 @@ class DollHouse {
     }
 
     public DollHouse() { // DOES NOT COMPILE
-        this("example");
         this.volume = 2; // DOES NOT COMPILE
     }
 }
