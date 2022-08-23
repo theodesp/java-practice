@@ -42,7 +42,7 @@ public class PlusMinus {
 
     /**
      * 
-     *  Compute the ratio of eachcount
+     *  Compute the ratio of each count
      */
     public static void plusMinus(List<Integer> arr) {
         int posCount = 0, negCount = 0, zeroCount = 0;
