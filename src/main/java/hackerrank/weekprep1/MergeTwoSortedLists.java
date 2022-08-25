@@ -99,7 +99,7 @@ public class MergeTwoSortedLists {
 
     static SinglyLinkedListNode mergeLists(SinglyLinkedListNode head1, SinglyLinkedListNode head2) {
         SinglyLinkedList temp = new SinglyLinkedList();
-        while(head1.next != null && head2.next != null) {
+        while(head1 != null && head2 != null) {
             if (head1.data < head2.data) {
                 temp.insertNode(head1.data);
                 head1 = head1.next;
