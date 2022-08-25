@@ -1,4 +1,4 @@
-package hackerrank;
+package hackerrank.weekprep1;
 
 import java.io.*;
 import java.math.*;
