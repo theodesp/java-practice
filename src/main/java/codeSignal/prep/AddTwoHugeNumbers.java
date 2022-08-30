@@ -11,11 +11,12 @@ public class AddTwoHugeNumbers {
     }
 
     public static void main(String[] args) {
-        var l = new ListNode<Integer>(9876);
-        l.next = new ListNode<Integer>(5432);
-        l.next.next = new ListNode<Integer>(1999);
-        var r = new ListNode<Integer>(1);
-        l.next = new ListNode<Integer>(8001);
+        var l = new ListNode<Integer>(1);
+        l.next = new ListNode<Integer>(2);
+        l.next.next = new ListNode<Integer>(4);
+        var r = new ListNode<Integer>(3);
+        r.next = new ListNode<Integer>(5);
+        r.next.next = new ListNode<Integer>(6);
         var res = solution(l, r);
         System.out.println(res);
     }
