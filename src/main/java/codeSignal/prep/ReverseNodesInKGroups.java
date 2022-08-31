@@ -1,7 +1,5 @@
 package codeSignal.prep;
 
-import org.checkerframework.checker.units.qual.A;
-
 public class ReverseNodesInKGroups {
     static class ListNode<T> {
         ListNode(T x) {
