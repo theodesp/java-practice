@@ -1,11 +1,31 @@
 package ocp17.Ch8;
 
+interface StringTwoParameterChecker {
+    boolean check(String text, String prefix);
+}
+
+interface EmptyStringCreator {
+    String create();
+}
+
+interface StringCopier { String copy(String value);
+}
+
+interface StringChecker { boolean check();
+}
+
 public class Calls {
     public static void main(String[] args) {
         StringTwoParameterChecker methodRef = String::startsWith;
         StringTwoParameterChecker lambda2 = (s, p) -> s.startsWith(p);
 
         System.out.println(methodRef.check("Zoo", "A")); // false
+        twoParamsCheck();
+    }
+
+    static void twoParamsCheck() {
+        StringTwoParameterChecker ref = (var a, var b) -> a.length() + b.length() < 10;
+        System.out.println(ref.check("Zoo", "A")); // true
     }
 
     void constructors() {
@@ -23,13 +43,3 @@ public class Calls {
     }
 }
 
-interface StringTwoParameterChecker {
-    boolean check(String text, String prefix);
-}
-
-interface EmptyStringCreator {
-    String create();
-}
-
-interface StringCopier { String copy(String value);
-}

@@ -51,12 +51,16 @@ interface Soar {
     abstract String toString(); // NOT a functional interface toString is a public method implemented in Object,
 }
 
+interface Invalid {
+    abstract int toString(); // invalid 
+}
+
 interface Dive {
-    String toString();
+    String toString(); // does not count against the single abstract method test 
 
-    public boolean equals(Object o);
+    public boolean equals(Object o); // does not count against the single abstract method test 
 
-    public abstract int hashCode();
+    public abstract int hashCode(); // does not count against the single abstract method test 
 
     public void dive(); // this method makes Dive a functional interface
 }
