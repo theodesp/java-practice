@@ -15,9 +15,11 @@ public class SubSetSum {
         if (target <0 || i == 0) {
             return false;
         }
+        // Take solution with current sum included
         var with = solution(arr, target-arr[i], i-1);
+        // Take solution without current sum included
         var without = solution(arr, target, i-1);
-
+        // Union result
         return with || without;
     }
 }
