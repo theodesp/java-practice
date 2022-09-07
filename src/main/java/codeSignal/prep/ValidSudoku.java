@@ -2,8 +2,6 @@ package codeSignal.prep;
 
 import java.util.ArrayList;
 import java.util.*;
-import java.util.stream.*;
-import static java.util.stream.Collectors.toList;
 
 public class ValidSudoku {
     public static void main(String[] args) {
