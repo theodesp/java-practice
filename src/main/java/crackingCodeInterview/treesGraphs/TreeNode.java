@@ -1,7 +1,12 @@
 package crackingCodeInterview.treesGraphs;
 
 public class TreeNode {
-    public String name;
+    public Integer value;
     public TreeNode left;
     public TreeNode right;
+
+    TreeNode(Integer value) {
+        this.value = value;
+    }
+
 }
