@@ -16,38 +16,43 @@ public class ListOfDepths {
     }
 
     public static void main(String[] args) {
-        var tree = new Tree<Integer>(1);
-
-        var res = createLists(tree);
-        System.out.println();
+        var t = new Tree<Integer>(5);
+        t.left = new Tree<Integer>(2);
+        t.left.left = new Tree<Integer>(1);
+        t.left.right = new Tree<Integer>(3);
+        t.right = new Tree<Integer>(6);
+        t.right.right = new Tree<Integer>(8);
+        t.right.right.left = new Tree<Integer>(7);
+        var res = createLists(t);
+        System.out.println(res);
     }
 
-    static List<List<Integer>> createLists(Tree<Integer> t) {
-        Queue<Tree<Integer>> queue = new LinkedList<>();
-        var map = new HashMap<Integer, List<Integer>>();
-        var visited = new HashSet<Tree<Integer>>();
-        visited.add(t);
+    static Object[] createLists(Tree<Integer> t) {
+        var result = new ArrayList<List<Integer>>();
+        var queue = new LinkedList<Tree<Integer>>();
+        var depth = 0;
+        result.add(new ArrayList<Integer>());
+        result.get(depth).add(t.value);
         queue.add(t);
-        var d =0;
-        map.put( d++, Arrays.asList(t.value));
-        while(queue.size() > 0) {
-            var s = queue.poll();
-            visited.add(s);
-            if (s.left != null) {
-                var r = map.putIfAbsent(d, new LinkedList<Integer>());
-                r.add(s.value);
+        while (!queue.isEmpty()) {
+            result.add(new ArrayList<Integer>());
+            depth++;
+            var size = queue.size();
+            for (int i = 0; i < size; i++) {
+                var tempNode = queue.poll();
+                if (tempNode.left != null) {
+                    queue.add(tempNode.left);
+                }
+                /*Enqueue right child */
+                if (tempNode.right != null) {
+                    queue.add(tempNode.right);
+                }
+                result.get(depth).add(tempNode.value);
             }
-            if (s.right != null) {
-                var r = map.putIfAbsent(d, new LinkedList<Integer>());
-                r.add(s.value);
-            }
-            queue.add(t);
-            d++;
+            
         }
-        return result;
-    }
-
-    static createListsDepth(Tree<Integer> t, Set<Tree<Integer>> visited, result) {
+        var temp = result.stream().map(v -> v.stream().mapToInt(Integer::intValue).toArray()).toArray();
+        return temp;
         
     }
 }
