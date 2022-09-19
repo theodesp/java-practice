@@ -24,15 +24,19 @@ public class IsListPalindrome {
     static boolean solution(ListNode<Integer> l) {
         ListNode<Integer> slow = l;
         ListNode<Integer> fast = l;
+        // Use fast pointer to go twice the speed
         while (fast != null && fast.next != null) {
             fast = fast.next.next;
             slow = slow.next;
         }
-        if (fast != null) { // odd nodes
+        // advance slow pointer in case of odd nodes
+        if (fast != null) { 
             slow = slow.next;
         }
+        // reverse first part
         slow = reverseList(slow);
         fast = l;
+        // check if first and second parts are the same
         while (slow != null) {
             if (slow.value.intValue() != fast.value.intValue()) {
                 return false;

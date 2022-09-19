@@ -67,7 +67,8 @@ public class FindSubstrings {
     /*
      * Initialize our lenLongSubstr to 0.
     Go through word one character at a time, using that character as a starting point for matching substrings in parts.
-    For each character, use the trie to find the longest substring from parts starting from this character. If it is longer than the longest one we've seen so far, record the current position in the string and the current length.
+    For each character, use the trie to find the longest substring from parts starting from this character. 
+    If it is longer than the longest one we've seen so far, record the current position in the string and the current length.
     Use the length of the longestSeenSubstring and its starting position to put the square brackets in the right place.
      */
     static String[] solution2(String[] words, String[] parts) {

@@ -20,10 +20,13 @@ public class IsTreeSymmetric {
         return isTreeSymmetric(t.left, t.right);
     }
     static boolean isTreeSymmetric(Tree<Integer> left, Tree<Integer> right) {
+        // base case
         if (left == null && right == null) {
             return true;
         }
+        // check if right value is equal to left value
         if (left != null && right != null && left.value == right.value) {
+            // recurse into subtrees
             return isTreeSymmetric(left.left, right.right) && isTreeSymmetric(left.right, right.left);
         }
         return false;

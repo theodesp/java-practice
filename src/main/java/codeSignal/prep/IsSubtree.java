@@ -52,26 +52,33 @@ public class IsSubtree {
     }
     
     static boolean lookAtTree(Tree<Integer> t1, Tree<Integer> t2){
+        // Base case
         if(t2 == null){
             return true;
         }
+        // Base case
         if(t1 == null){
             return false;
         }
+        // Check if both are equal
         if(checkTree(t1, t2)){
             return true;
         }
+         // Check if left/right is subtree of another
         boolean check = (lookAtTree(t1.left, t2) || lookAtTree(t1.right, t2));
         return check;
     }
     
     static boolean checkTree(Tree<Integer> t1, Tree<Integer> t2){
+        // base case
         if(t1 == null && t2 == null){
             return true;
         }
+        // check if they are different pointers
         if(t1 == null || t2 == null){
             return false;
         }
+        // check their values and their subtrees
         boolean check = (t1.value.equals(t2.value) && checkTree(t1.left, t2.left) && checkTree(t1.right, t2.right));
         return check;
     }
