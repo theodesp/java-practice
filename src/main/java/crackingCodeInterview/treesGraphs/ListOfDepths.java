@@ -27,7 +27,7 @@ public class ListOfDepths {
         System.out.println(res);
     }
 
-    static Object[] createLists(Tree<Integer> t) {
+    static Integer[][] createLists(Tree<Integer> t) {
         var result = new ArrayList<List<Integer>>();
         var queue = new LinkedList<Tree<Integer>>();
         var depth = 0;
@@ -43,7 +43,6 @@ public class ListOfDepths {
                 if (tempNode.left != null) {
                     queue.add(tempNode.left);
                 }
-                /*Enqueue right child */
                 if (tempNode.right != null) {
                     queue.add(tempNode.right);
                 }
@@ -51,7 +50,7 @@ public class ListOfDepths {
             }
             
         }
-        var temp = result.stream().map(v -> v.stream().mapToInt(Integer::intValue).toArray()).toArray();
+        var temp =result.stream().map(arr -> arr.toArray(Integer[]::new)).toArray(Integer[][]::new);
         return temp;
         
     }
