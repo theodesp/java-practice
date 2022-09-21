@@ -1,4 +1,4 @@
-package codeSignal;
+package codeSignal.prep;
 
 import java.util.*;
 
