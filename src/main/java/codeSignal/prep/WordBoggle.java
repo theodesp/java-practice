@@ -27,6 +27,7 @@ solution(board, words) = ["CODE", "RULES"].
  */
 public class WordBoggle {
     String[] solution(char[][] board, String[] words) {
+        // Step 1: Add all words to a trie
         Node root = new Node (' ');
         for (String w : words) {
             Node n = root;
@@ -38,6 +39,7 @@ public class WordBoggle {
             n.str = w;
         }
 
+        // Step 2: Use dfs for each position of the board to locate all words
         Set<String> ans = new HashSet<>();
         for (int r = 0; r < board.length; r ++)
             for (int c = 0; c < board [0].length; c ++)
@@ -57,11 +59,13 @@ public class WordBoggle {
 
         char v = b [r][c];
         Node curr = n.children [b [r][c]];
+        // mark as visited
         b [r][c] = '*';
 
         if (curr.terminal) ans.add (curr.str);
         for (int idx = 0; idx < 8; idx ++)
             dfs (b, r + rdir[idx], c + cdir[idx], curr, ans);
+        // unmark
         b [r][c] = v;
     }
 
